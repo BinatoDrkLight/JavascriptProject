@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+#scoreBox {
+    display: none; /* Hide the score box initially */
+}
+
+.bubble {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 123, 255, 0.5); /* Blue with transparency */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+}
+
+.bubble.popped {
+    animation: bubbleBurst 0.5s ease forwards; /* Burst animation */
+}
+
+@keyframes bubbleBurst {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
