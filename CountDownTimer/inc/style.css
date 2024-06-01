@@ -1,0 +1,11 @@
+*{
+    background-color:black;
+}
+
+#timer{
+    text-align: center;
+    font-size:4rem;
+    font-family:cursive;
+    margin-top:18rem;
+    color:white;
+}
